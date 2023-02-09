@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Pizza Yolo</title>
+</head>
+
+<body>
+    <form class="form" id="commandForm">
+        <div class="form__background">
+            <div class="form__informations">
+                <img class="logo" src="../logo.png" alt="logo">
+                <div class="form__input">
+                    <div class="input__informations">
+                        <input class="input" type="text" name="firstName" id="firstName" placeholder="Prénom">
+                        <label class="error-message" id="firstNameError" for="firstname">Vous n'avez pas fourni un
+                            prénom
+                            valide.</label>
+                    </div>
+                    <div class="input__informations">
+                        <input class="input" type="text" name="lastName" id="lastName" placeholder="Nom">
+                        <label class="error-message" id="lastNameError" for="lastName">Vous n'avez pas fourni un nom
+                            valide.</label>
+                    </div>
+                </div>
+                <div class="form__input">
+                    <div class="input__informations">
+                        <input class="input" type="tel" name="phone" id="phone" placeholder="Numéro de téléphone">
+                        <label class="error-message" id="phoneError" for="phone">Vous n'avez pas fourni un numéro
+                            valide.</label>
+                    </div>
+                    <div class="input__informations">
+                        <input class="input" type="text" name="postalAdress" id="postalAdress"
+                            placeholder="Adresse Postal">
+                        <label class="error-message" id="postalAdressError" for="postalAdress">Vous n'avez pas fourni
+                            une adresse postal valide.</label>
+                    </div>
+                </div>
+                <div class="form__input">
+                    <div class="input__informations">
+                        <input class="input" type="text" name="city" id="city" placeholder="Ville">
+                        <label class="error-message" id="cityError" for="city">Vous n'avez pas fourni une ville
+                            valide.</label>
+                    </div>
+                    <div class="input__informations">
+                        <input class="input" type="number" name="postalCode" id="postalCode" placeholder="Code Postal">
+                        <label class="error-message" id="postalCodeError" for="postalCode">Vous n'avez pas fourni un
+                            code
+                            postal valide.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form__pizzaSize">
+                <h2 class="form__title">Taille de la Pizza</h2>
+                <select name="pizzaSize" id="pizzaSize">
+                    <option value="default">--Choissiez votre taille--</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="pizzaSize" id="pizzaSizeError" class="error-message">Vous n'avez pas fourni de taille de pizza.</label>
+            </div>
+
+            <div class="form__ingredients">
+                <h2 class="form__title">Ingrédients</h2>
+                <select name="pizzaBase" id="pizzaBase">
+                    <option value="default">--Base de la pizza--</option>
+                    <option value="cheese">Base crème fraiche</option>
+                    <option value="tomato">Base sauce tomate</option>
+                </select>
+                <label for="pizzaBase" id="pizzaBaseError" class="error-message">Vous n'avez pas fourni de base de Pizza</label>
+               
+                <select name="meatOption" id="meatOption">
+                    <option value="default">--Choissisez votre viande--</option>
+                    <option value="ham">Jambon</option>
+                    <option value="groundMeat">Viande haché</option>
+                    <option value="chicken">Poulet</option>
+                </select>
+                <label for="meatOption" id="meatOptionError" class="error-message">Vous n'avez pas fourni de viande.</label>
+            </div>
+            <div class="form__textarea">
+                <textarea class="textArea" name="textSupp" id="textSupp" cols="70" rows="10"
+                    placeholder="Un supplément, une modification ? Ecrivez le ici !"></textarea>
+            </div>
+            <div>
+                <h2 class="total">Le total de votre panier est de 0 €</h2>
+            </div>
+            <div class="buttons">
+                <button class="button__submit" type="submit">Valider</button>
+                <button class="button__reset" type="reset">Annuler</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="/Exercice2/app.js"></script>
+</body>
+
+</html>

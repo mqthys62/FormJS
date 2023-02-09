@@ -1,0 +1,213 @@
+body {
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__background {
+    width: 600px;
+    background-color: black;
+    border-radius: 7px;
+    border: transparent;
+}
+
+.logo {
+    width: 300px;
+}
+
+.form__informations {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 550px;
+    gap: 16px;
+    align-items: center;
+    background-image: url(../pizzafont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.input__informations {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__input {
+    display: flex;
+    gap: 16px;
+    
+}
+
+.error-message {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.input {
+    line-height: 28px;
+    width: 250px;
+    border: 2px solid transparent;
+    border-bottom-color: #a22525;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #a22525;
+   }
+   
+   .input::placeholder {
+    color: white;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+
+   .form__pizzaSize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .form__title {
+    font-size: 34px;
+    color: white;
+   }
+
+   select {
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #a22525;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    
+   }
+
+   .form__ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+   }
+
+   .textArea {
+    width: 95%;
+    border: none;
+    border-radius: 7px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #a22525;
+    
+   }
+
+   .form__textarea {
+    display: flex;
+    justify-content: center;
+   }
+   
+   .button__submit {
+    width: 30%;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: white;
+    z-index: 1;
+    background: #0a6a0b;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+
+   .button__reset {
+    width: 30%;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: white;
+    z-index: 1;
+    background: #6b0707;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .button__submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #2daa0e;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .button__reset::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #d50b0b;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+   .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 5px;
+   }
+
+   .total {
+    display: flex;
+    justify-content: center;
+    color: white;
+   }
+
+   option {
+    width: 30px;
+   }
